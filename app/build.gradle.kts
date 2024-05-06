@@ -110,7 +110,7 @@ dependencies {
     kaptAndroidTest(libs.google.dagger.hiltAndroidCompiler)
 }
 
-val outputDir = "${project.buildDir}/reports/ktlint/"
+val outputDir = "${project.buildFile}/reports/ktlint/"
 val inputFiles = project.fileTree(mapOf("dir" to "src", "include" to "**/*.kt"))
 
 val ktlintCheck by tasks.creating(JavaExec::class) {
